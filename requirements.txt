@@ -1,5 +1,5 @@
 accelerate==1.3.0
-fastapi["standard"
+fastapi[standard]
 transformers
 uvicorn
 scipy
