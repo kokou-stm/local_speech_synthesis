@@ -1,4 +1,4 @@
-accelerate==1.3.0
+accelerate
 fastapi[standard]
 transformers
 uvicorn
