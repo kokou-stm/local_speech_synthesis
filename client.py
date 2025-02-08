@@ -3,10 +3,13 @@ import io
 import scipy.io.wavfile as wav
 
 # L'URL de ton API FastAPI
-url = "http://localhost:8000/predit/"
+url = "http://local-test-llm.dmcug9ccc4gddtgw.eastus.azurecontainer.io/predit/"
 
 # Le message à passer au modèle
-message = "Transport le wòɖo ɖe anyigba me le esia kple esia. Esi wòkpe ɖe ŋgɔ nɔnɔ la, ŋutilã, tsitsi kple doɖoɖo ɖo eŋu."
+message = """
+  eye wòkatã dzɔme woŋlɔlɔ̃ be wòhã gbɔna. Nà wòeɖo wo dɔwɔ, gake football nyuie kple dɔwɔ ƒe afɔ kple ame,   mɔ na wòkplɔ dzɔdzɔ kple nudɔlawo.
+    Football ɖe afɔme ne wòhã dɔwɔ kple ame aɖe me, wòkatã gbe nyuiwo, wòɖɔ ɖekawɔ nu.
+"""
 
 # Envoi de la requête POST avec le message
 response = requests.post(url, params={"message": message})
